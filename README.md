@@ -34,3 +34,13 @@ For Project 2
 ```bash
 cd project-2/client && npx cypress open
 ```
+
+## How to generate single reprots for all test suite
+Launch web application before 
+```bash
+cd project-1
+npx cypress run
+npm run merge
+npm run generate_mochawesome_report
+```
+Single report will be located in : project-1/cypress/report/output.html
